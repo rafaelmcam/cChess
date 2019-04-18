@@ -7,7 +7,7 @@ import os
 from aux_functions import *
 
 class Game():
-    def __init__(self, size = (400, 400), game_n = 1):
+    def __init__(self, game_n = 1, size = (400, 400)):
         
         #depois botar as funções que geram os dois arrays abaixo, por enquanto criar nos jupyters e dar load
         self.load_array_geral("../Jogos/{}/array_geral_{}.npy".format(str(game_n), str(game_n)))
@@ -33,17 +33,17 @@ class Game():
         print(detect_move(self.array_geral, jogada))
         return
 
-    def jogo_ate_i(self, i = 9999, print = True):
+    def jogo_ate_i(self, i = 9999):
         self.board = chess.Board()
         for jogada in self.array_jogadas[:i]:
             self.board.push_uci(jogada)
-        print(self.board)
         return self.board
 
     
 if __name__ == "__main__":
-    c = Game()
-    c.jogo_ate_i(2)
+
+    c = Game(game_n = 0)
+    print(c.jogo_ate_i())
  
 
     #print("Img Similarity: ", c.debug_step(0, (4, 3))[-1])

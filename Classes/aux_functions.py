@@ -84,6 +84,17 @@ def detect_move(array_geral, jogada):
             matrix[pos[0], pos[1]] = 2
     return matrix
 
+
+def generate_matrix_board(array_jogadas, i):
+    board = jogo_ate_i(array_jogadas, i)
+    tabuleiro = np.array([(converte_notacao_xadrez_afonso(i), x.symbol()) for i, x in board.piece_map().items()])
+    matrix = np.chararray((8, 8))
+    matrix[:] = "_"
+
+    for i, x in tabuleiro:
+        matrix[i[0], i[1]] = x
+    return matrix
+
 def atoi(text):
     return int(text) if text.isdigit() else text
 
