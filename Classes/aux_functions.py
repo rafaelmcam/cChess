@@ -95,6 +95,13 @@ def generate_matrix_board(array_jogadas, i):
         matrix[i[0], i[1]] = x
     return matrix
 
+def save_labels(n_jogo, n_jogada, matrix, array_geral):
+    for i in range(8):
+        for j in range(8):
+            peca = matrix[i, j].decode("utf-8")
+            cv2.imwrite("Labels/{}/{}_{}_{}{}.png".format(peca, n_jogo, n_jogada, i, j), array_geral[n_jogada][i][j])
+    return
+
 def atoi(text):
     return int(text) if text.isdigit() else text
 

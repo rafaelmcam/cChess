@@ -9,6 +9,7 @@ from aux_functions import *
 class Game():
     def __init__(self, game_n = 1, size = (400, 400)):
         
+        self.game_n = game_n
         #depois botar as funções que geram os dois arrays abaixo, por enquanto criar nos jupyters e dar load
         self.load_array_geral("../Jogos/{}/array_geral_{}.npy".format(str(game_n), str(game_n)))
         self.load_array_jogadas("../Jogos/{}/array_jogadas_{}.npy".format(str(game_n), str(game_n)))
@@ -39,7 +40,14 @@ class Game():
             self.board.push_uci(jogada)
         return self.board
 
-    
+    def save_all_labels_in_game(self):
+        n_jogo = self.game_n
+        for i in range(len(self.array_jogadas)):
+            n_jogada = i
+            matrix = generate_matrix_board(self.array_jogadas, i = n_jogada)
+            save_labels(self.game_n, n_jogada, matrix, self.array_geral)
+        return 
+        
 if __name__ == "__main__":
 
     c = Game(game_n = 0)
