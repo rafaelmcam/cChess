@@ -84,6 +84,17 @@ def detect_move(array_geral, jogada):
             matrix[pos[0], pos[1]] = 2
     return matrix
 
+def converte_notacao_xadrez_afonso(square_number):
+    return (63 - square_number)//8, 7 - (63 - square_number)%8
+
+def push_board(board, move):
+    board.push_uci(move)
+
+def jogo_ate_i(array_de_jogadas, i = 9999):
+    board = chess.Board()
+    for jogada in array_de_jogadas[:i]:
+        push_board(board, jogada)
+    return board
 
 def generate_matrix_board(array_jogadas, i):
     board = jogo_ate_i(array_jogadas, i)
@@ -99,7 +110,7 @@ def save_labels(n_jogo, n_jogada, matrix, array_geral):
     for i in range(8):
         for j in range(8):
             peca = matrix[i, j].decode("utf-8")
-            cv2.imwrite("Labels/{}/{}_{}_{}{}.png".format(peca, n_jogo, n_jogada, i, j), array_geral[n_jogada][i][j])
+            cv2.imwrite("../Labels/{}/{}_{}_{}{}.png".format(peca, n_jogo, n_jogada, i, j), array_geral[n_jogada][i][j])
     return
 
 def atoi(text):
