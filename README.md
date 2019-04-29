@@ -2,8 +2,15 @@
 Computer Vision and Machine Learning Application to Chess
 
 
-## <center> <i> Piece Detection
 
+## <center> <i> Engine Scores
+
+
+![](ReadMe_Images/geral_jogo1.png)
+
+
+
+## <center> <i> Piece Detection
 
 Original             |  Hot/Gray
 :-------------------------:|:-------------------------:
@@ -14,7 +21,7 @@ Original             |  Hot/Gray
 
 Real World             |  Computer Vision
 :-------------------------:|:-------------------------:
-<img src="Jogos/0/inicial5.jpg" width="500"> |  ![](ReadMe_Images/jogo_0.svg)
+<img src="Jogos/0/5.jpg" width="500"> |  ![](ReadMe_Images/jogo_0.svg)
 
 
 Real World             |  Computer Vision
