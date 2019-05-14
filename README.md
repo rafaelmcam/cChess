@@ -7,7 +7,9 @@ Computer Vision and Machine Learning Application to Chess
 
 ![](ReadMe_Images/BlenderModel.png)
 
+## <center> <i> Blender Scenes with some fancy rendering (Train Models)
 
+![](ReadMe_Images/fancy.png)
 # Computer Vision
 
 ## <center> <i> Piece Detection
