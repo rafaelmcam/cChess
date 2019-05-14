@@ -1,14 +1,14 @@
 # cChess
 Computer Vision and Machine Learning Application to Chess
 
+# Deep Learning
+
+## <center> <i> Blender Scenes (Train Models)
+
+![](ReadMe_Images/BlenderModel.png)
 
 
-## <center> <i> Engine Scores
-
-
-![](ReadMe_Images/geral_jogo1.png)
-
-
+# Computer Vision
 
 ## <center> <i> Piece Detection
 
@@ -27,3 +27,8 @@ Real World             |  Computer Vision
 Real World             |  Computer Vision
 :-------------------------:|:-------------------------:
 <img src="Jogos/1/48.jpg" width="500"> |  ![](ReadMe_Images/jogo_1.svg)
+
+## <center> <i> Engine Scores
+
+
+![](ReadMe_Images/geral_jogo1.png)
