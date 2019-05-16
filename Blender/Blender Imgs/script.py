@@ -40,6 +40,9 @@ for i in range(5):
 	camera.location = mathutils.Vector((0., 0., 60.))
 	camera.rotation_euler = mathutils.Vector((0., 0., -np.pi/2))
 
+	sun = bpy.data.objects["Empty"]
+	sun.rotation_euler = mathutils.Vector((0., 0., 2 * np.pi * np.random.random()))
+
 
 	for peca, pos in dc.items():
 		if peca[0]!= "_":
