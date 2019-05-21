@@ -2,14 +2,19 @@
 Computer Vision and Machine Learning Application to Chess
 
 # Deep Learning
+## Confusion Matrix on Pieces Classifciation with Fine-Tuning of VGG16
+![](ReadMe_Images/confusion_matrix.png)
 
-## <center> <i> Blender Scenes (Train Models)
+### Test on Never Seen Data (White Knight Classification)
+![](ReadMe_Images/knight_test_classification.png)
 
-![](ReadMe_Images/BlenderModel.png)
+## <center> <i> Blender Render (Train Models)
 
-## <center> <i> Blender Scenes with some fancy rendering (Train Models)
+Model          |  Fancy Rendering
+:-------------------------:|:-------------------------:
+![](ReadMe_Images/BlenderModel.png)|  ![](ReadMe_Images/fancy.png)
 
-![](ReadMe_Images/fancy.png)
+
 # Computer Vision
 
 ## <center> <i> Piece Detection
