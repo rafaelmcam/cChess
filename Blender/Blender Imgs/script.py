@@ -10,7 +10,7 @@ path = ""
 
 
 begin_time = time.time()
-for i in range(120):
+for i in range(1):
 
 	img_name = f"{i}"
 
