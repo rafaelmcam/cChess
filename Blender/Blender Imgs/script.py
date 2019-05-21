@@ -3,12 +3,14 @@ import mathutils
 import numpy as np
 import cv2
 import pickle
-
+import time
 # blender scene.blend -b -P script.py
 
 path = ""
 
-for i in range(5):
+
+begin_time = time.time()
+for i in range(120):
 
 	img_name = f"{i}"
 
@@ -70,7 +72,7 @@ for i in range(5):
 	bpy.data.scenes['Scene'].render.filepath = f'Boards/{img_name}.jpg'
 	bpy.ops.render.render( write_still=True ) 
 
-
+print(f"Levou: {time.time() - begin_time}")
 
 #img = cv2.imread('/home/rcampello/Desktop/image.png', 0)
 #print(img)
