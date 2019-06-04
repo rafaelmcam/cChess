@@ -2,7 +2,14 @@
 Computer Vision and Machine Learning Application to Chess
 
 # Deep Learning
-## Confusion Matrix on Pieces Classifciation with Fine-Tuning of VGG16
+
+
+## User Generated Blender Board Classification - 62/64 Accuracy.
+![](ReadMe_Images/Blender_Classification.png)
+
+
+
+## Confusion Matrix on Pieces Classification with Fine-Tuning of VGG16
 ![](ReadMe_Images/confusion_matrix.png)
 
 ### Test on Never Seen Data (White Knight Classification)
