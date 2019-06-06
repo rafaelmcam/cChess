@@ -8,7 +8,7 @@ import chess
 # blender scene.blend -b -P script.py
 
 
-_fen = "rnbqk2r/1p2bppp/p2ppn2/8/3NP3/P1NB4/1PP2PPP/R1BQ1RK1 b kq - 0 8"
+_fen = "r1bqkbnr/1pp2p2/8/p2Pp1Np/3n3P/1PN5/P1PP1PP1/R1BQKB1R w KQkq - 1 8"
 board = chess.Board(fen = _fen)
 
 def converte_notacao_xadrez_afonso(square_number):
